@@ -19,9 +19,6 @@ package com.ghc.foss.frames;
 import com.ghc.foss.ds.*;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 /**
  *
@@ -62,7 +59,6 @@ public class Selector extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DS Selector");
 
-        jRadioButtonStack.setSelected(true);
         jRadioButtonStack.setText("Stack");
         jRadioButtonStack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,9 +207,9 @@ public class Selector extends javax.swing.JFrame {
    
     //Constalts
     private final String IMAGE_PATH = "/com/ghc/foss/images/";
-    private final String STACK_IMAGE ="stack.png";
-    private final String QUEUE_IMAGE ="queue.png";
-    private final String HEAP_IMAGE ="heap.png";
+    private final String STACK_IMAGE ="queue.png";
+    private final String QUEUE_IMAGE ="heap.png";
+    private final String HEAP_IMAGE ="stack.png";
     private final String TREE_IMAGE ="tree.png";
     private final Integer IMG_DIM = 175;
     

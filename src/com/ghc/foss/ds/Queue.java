@@ -72,8 +72,7 @@ public class Queue implements DataStructure{
     @Override
     public void removeAll()
     {
-        for(int i =0;i<size();i++)
-            queue.remove(0);
+        queue.clear();
     }
     
     /**

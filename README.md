@@ -22,4 +22,4 @@ The "ds" and "frames" folders contain the code files and "images", as the name s
 2. If you would like to propose an enhancement, or report a bug that you would like to work on, feel free to open new issues and we will assign them to you.
 
 ### How to get help
-Have questions, comments, feedback or looking for help? We are available and can be reached at the [Slack channel](https://ghcfoss.slack.com) created specifically for this project! (IRC channels are so a thing of the past)
+Have questions, comments, feedback or looking for help? We are available and can be reached at the [Slack channel](https://ghcfoss.slack.com) created specifically for this project. *IRC channels are so a thing of the past!*. If you have are having trouble signing up, you can reach us at ghcfoss@gmail.com for signup help.

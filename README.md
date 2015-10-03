@@ -4,8 +4,9 @@
 
 ### Tools and Technology
 
+
 ### The Repository Details
-The repository consists of a single "src" folder that is the root of the packages used by the JAVA files inside. This "src" folder can be used as the Source Folder within any JAVA based IDE. Specific instructions on how to use it with NetBeans, which has been used originally to develop this project, are present in the [Instructions](https://github.com/GHCFOSS/DataVisualizer-JAVA/wiki/Download-Setup-Run-Instructions---Java) wiki.
+The repository consists of a single "src" folder that is the root of the packages used by the JAVA files inside. This "src" folder can be used as the Source Folder within any JAVA based IDE. Specific instructions on how to use it with NetBeans, which has been used originally to develop this project, are present in the [Instructions](https://github.com/GHCFOSS/DataVisualizer-JAVA/wiki) wiki.
 
 The root "src" folder contains three pakcages: com.ghc.foss.ds, com.ghc.foss.frames and com.ghc.foss.images. The first two contain code files and third, as the name suggests, images.
 

@@ -35,10 +35,6 @@
           <Group type="102" alignment="1" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButtonNext" min="-2" pref="86" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabelChoose" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -46,9 +42,14 @@
                           <Component id="jRadioButtonHeap" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButtonQueue" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButtonStack" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButtonList" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="26" max="32767" attributes="0"/>
                       <Component id="jLabelPicture" min="-2" pref="175" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jButtonNext" min="-2" pref="86" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
@@ -63,10 +64,12 @@
                   <Component id="jLabelPicture" min="-2" pref="175" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="jLabelChoose" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="jRadioButtonStack" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jRadioButtonQueue" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jRadioButtonList" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jRadioButtonHeap" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -136,6 +139,14 @@
           <Connection code="&quot;Data Structure Image&quot;" type="code"/>
         </Property>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButtonList">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="List"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonListActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -50,6 +50,7 @@ public class Selector extends javax.swing.JFrame {
         jLabelChoose = new javax.swing.JLabel();
         jButtonNext = new javax.swing.JButton();
         jLabelPicture = new javax.swing.JLabel();
+        jRadioButtonList = new javax.swing.JRadioButton();
 
         buttonGroupDS.add(jRadioButtonStack);
         buttonGroupDS.add(jRadioButtonQueue);
@@ -99,6 +100,13 @@ public class Selector extends javax.swing.JFrame {
         jLabelPicture.setText("Data Structure");
         jLabelPicture.setToolTipText("Data Structure Image");
 
+        jRadioButtonList.setText("List");
+        jRadioButtonList.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonListActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -106,18 +114,19 @@ public class Selector extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelChoose)
                             .addComponent(jRadioButtonTree)
                             .addComponent(jRadioButtonHeap)
                             .addComponent(jRadioButtonQueue)
-                            .addComponent(jRadioButtonStack))
+                            .addComponent(jRadioButtonStack)
+                            .addComponent(jRadioButtonList))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                        .addComponent(jLabelPicture, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabelPicture, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(39, 39, 39))
         );
         layout.setVerticalGroup(
@@ -128,10 +137,12 @@ public class Selector extends javax.swing.JFrame {
                     .addComponent(jLabelPicture, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabelChoose)
-                        .addGap(29, 29, 29)
+                        .addGap(31, 31, 31)
                         .addComponent(jRadioButtonStack)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButtonQueue)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButtonList)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButtonHeap)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -166,6 +177,10 @@ public class Selector extends javax.swing.JFrame {
             if(dataStructureIdentifier==DS.QUEUE)
             {
                 new Visualizer(new Queue(),"Queue",false,this).setVisible(true);
+            }
+            if(dataStructureIdentifier==DS.LIST)
+            {
+                new Visualizer(new List(),"List",true,this).setVisible(true);
             }
             if(dataStructureIdentifier==DS.BINARY_HEAP)
             {
@@ -204,6 +219,13 @@ public class Selector extends javax.swing.JFrame {
         dataStructureIdentifier=DS.BINARY_SEARCH_TREE;
     }//GEN-LAST:event_jRadioButtonTreeActionPerformed
 
+    private void jRadioButtonListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonListActionPerformed
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource(IMAGE_PATH + LIST_IMAGE ));
+        Image dimg = img.getScaledInstance( IMG_DIM, IMG_DIM, Image.SCALE_SMOOTH);
+        jLabelPicture.setIcon(new ImageIcon(dimg));
+        dataStructureIdentifier=DS.LIST;
+    }//GEN-LAST:event_jRadioButtonListActionPerformed
+
    
     //Constalts
     private final String IMAGE_PATH = "/com/ghc/foss/images/";
@@ -211,11 +233,12 @@ public class Selector extends javax.swing.JFrame {
     private final String QUEUE_IMAGE ="heap.png";
     private final String HEAP_IMAGE ="stack.png";
     private final String TREE_IMAGE ="tree.png";
+    private final String LIST_IMAGE="list.png";
     private final Integer IMG_DIM = 175;
     
     //Enum
     public enum DS {
-        STACK, QUEUE, BINARY_SEARCH_TREE, BINARY_HEAP
+        STACK, QUEUE, BINARY_SEARCH_TREE, BINARY_HEAP, LIST
     }
     static DS dataStructureIdentifier=DS.STACK;
     
@@ -225,6 +248,7 @@ public class Selector extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelChoose;
     private javax.swing.JLabel jLabelPicture;
     private javax.swing.JRadioButton jRadioButtonHeap;
+    private javax.swing.JRadioButton jRadioButtonList;
     private javax.swing.JRadioButton jRadioButtonQueue;
     private javax.swing.JRadioButton jRadioButtonStack;
     private javax.swing.JRadioButton jRadioButtonTree;

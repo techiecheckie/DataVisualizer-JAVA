@@ -43,17 +43,17 @@ public class List implements DataStructure{
     
     public Boolean remove(Integer element)
     {
-        return false;
+        return list.remove(element);
     }
     
     public void removeAll()
     {
-        
+        list.removeAll(list);
     }
     
     public Integer size()
     {
-        return 0;
+        return list.size();
     }
     
      /**

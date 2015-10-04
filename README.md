@@ -18,7 +18,7 @@ The three pakcages: com.ghc.foss.ds, com.ghc.foss.frames and com.ghc.foss.images
 The "ds" and "frames" folders contain the code files and "images", as the name suggests, contains images. All the frame/GUI based logic is present inside the "frames" package and is independent of the data structures that it is displaying. The data structures are present in side the "ds" package and are independent of frame/GUI based logic. All data structures inherit from a single DataStructure interface to give them conformity and enable separation of concern between the data structure and the frame/GUI logic.
 
 ### How to work on an Issue
-1. If there is a particular existing issue that you would like to fix, please leave a comment below it with *intent and details of how you intend to fix it*. This will reduce duplication of effort. 
+1. You can view the open issues for the repository under [Issues](https://github.com/GHCFOSS/DataVisualizer-JAVA/issues). If there is a particular existing issue that you would like to fix, please leave a comment below it with *intent and details of how you intend to fix it*. This will reduce duplication of effort. 
 2. If you would like to propose an enhancement, or report a bug that you would like to work on, feel free to open new issues and we will assign them to you.
 
 ### How to get help

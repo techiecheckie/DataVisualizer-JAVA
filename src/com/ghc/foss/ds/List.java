@@ -21,6 +21,7 @@ import java.util.ArrayList;
 /**
  *
  * @author banjum
+ * @author zunairajamil
  */
 public class List implements DataStructure{
     
@@ -41,16 +42,28 @@ public class List implements DataStructure{
         
     }
     
+    /**
+     * searches for and removes first occurrence of the specified element. 
+     * returns true if element is removed successfully. returns false if element not found
+     * @param element, an Integer value to be removed from list
+     */
     public Boolean remove(Integer element)
     {
         return list.remove(element);
     }
     
+    /**
+     * removes all elements from list
+     */
     public void removeAll()
     {
         list.removeAll(list);
     }
     
+    /**
+     * GET size of list
+     * @return number of elements in list
+     */
     public Integer size()
     {
         return list.size();
